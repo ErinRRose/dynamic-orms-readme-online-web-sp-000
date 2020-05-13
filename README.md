@@ -17,9 +17,7 @@ class Song
   attr_accessor :name, :album
   attr_reader :id
 
-  def self.table_name
-    self.to_s.downcase.pluralize
-  end
+  
 
   def initialize(id=nil, name, album)
     @id = id
